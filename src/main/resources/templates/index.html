@@ -1,1 +1,13 @@
-<script></script>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring MVC і Thymeleaf</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<h1 th:text="${message}"></h1>
+<ul>
+    <li th:each="item : ${items}" th:text="${item}"></li>
+</ul>
+</body>
+</html>
